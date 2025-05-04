@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-display font-bold mb-8 gradient-text">{{ .Title }}</h1>
+            
+            {{ if eq .Section "blog" }}
+            <div class="mb-12">
+                <p class="text-xl text-gray-300">
+                    Latest news, tutorials, and resources for AWS User Group leaders.
+                </p>
+            </div>
+            {{ end }}
+            
+            <div class="space-y-12">
+                {{ range .Pages }}
+                <article class="gradient-border animated-gradient">
+                    <div class="gradient-card">
+                        <div class="md:flex">
+                            {{ with .Params.image }}
+                            <div class="md:w-1/3 mb-6 md:mb-0 md:mr-8">
+                                <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-48 md:h-full object-cover rounded-lg">
+                            </div>
+                            {{ end }}
+                            <div class="md:flex-1">
+                                <div class="text-sm text-gray-400 mb-2">{{ .Date.Format "January 2, 2006" }}</div>
+                                <h2 class="text-2xl font-bold mb-3">
+                                    <a href="{{ .Permalink }}" class="hover:text-accent-pink transition-colors">{{ .Title }}</a>
+                                </h2>
+                                <p class="text-gray-300 mb-4">{{ .Summary }}</p>
+                                <a href="{{ .Permalink }}" class="inline-flex items-center text-accent-pink hover:text-accent-blue transition-colors">
+                                    Read more
+                                    <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

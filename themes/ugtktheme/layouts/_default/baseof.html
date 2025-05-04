@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Site.Params.images }}{{ range first 1 . }}
+    <meta property="og:image" content="{{ . | absURL }}">
+    {{ end }}{{ end }}
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    {{ with .Site.Params.images }}{{ range first 1 . }}
+    <meta name="twitter:image" content="{{ . | absURL }}">
+    {{ end }}{{ end }}
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    {{ $styles := resources.Get "css/main.css" | css.PostCSS }}
+    {{ if hugo.IsProduction }}
+        {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Background elements -->
+    <div class="reinvent-grid fixed inset-0 z-0"></div>
+    <div class="reinvent-glow fixed inset-0 z-0">
+        <div class="glow-circle glow-circle-1"></div>
+        <div class="glow-circle glow-circle-2"></div>
+        <div class="glow-circle glow-circle-3"></div>
+    </div>
+    
+    <!-- Hexagon background will be added by JavaScript -->
+    <div id="hexagon-background" class="fixed inset-0 z-0"></div>
+    
+    <!-- Decorative elements -->
+    <div class="decorative-line fixed top-[20%] left-0 right-0 z-0"></div>
+    <div class="decorative-line fixed top-[80%] left-0 right-0 z-0"></div>
+    
+    {{ partial "header.html" . }}
+    
+    <main class="flex-grow relative z-10">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer.html" . }}
+    
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

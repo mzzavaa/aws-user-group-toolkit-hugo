@@ -1,0 +1,342 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-24 md:py-36">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#6f42c1] via-[#0070f3] to-[#00c9b7] opacity-5"></div>
+    
+    <!-- Animated grid lines -->
+    <div class="absolute inset-0 bg-grid-pattern bg-[length:50px_50px] opacity-20"></div>
+    
+    <!-- Hero content -->
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center reveal-animation">
+            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
+                <span class="text-[#6f42c1] text-sm font-medium">AWS User Group Toolkit</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 gradient-text leading-tight text-glow">
+                User Group Toolkit
+            </h1>
+            
+            <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                Empowering Collaboration: Your Open Source Toolset for Building Thriving Communities
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://github.com/aws-user-group-toolkit" class="reinvent-button hover-scale">
+                    <span class="relative z-10 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        GitHub Organization
+                    </span>
+                </a>
+                <a href="/docs" class="reinvent-button-secondary hover-scale">
+                    <span class="relative z-10">Read the Docs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative bottom border -->
+    <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#6f42c1] to-transparent"></div>
+</section>
+
+<!-- Toolkit Components Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16 reveal-animation">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Toolkit Components</h2>
+            <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Explore our suite of tools designed to make running AWS User Groups easier and more effective.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Component 1 -->
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.1s;">
+                <div class="h-full p-8 rounded-lg">
+                    <div class="mb-6">
+                        <div class="reinvent-icon-container mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6f42c1]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Meetup Header Image Generator</h3>
+                    <p class="text-gray-300 mb-6">
+                        Create captivating meetup headers for your events with our easy-to-use generator.
+                    </p>
+                    <a href="/docs" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                        <span>Read the docs</span>
+                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Component 2 -->
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.2s;">
+                <div class="h-full p-8 rounded-lg">
+                    <div class="mb-6">
+                        <div class="reinvent-icon-container mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">User Group Templates</h3>
+                    <p class="text-gray-300 mb-6">
+                        Ready-to-use templates for diverse content needs for your AWS User Group.
+                    </p>
+                    <a href="/docs" class="inline-flex items-center text-[#0070f3] hover:text-[#6f42c1] transition-colors group">
+                        <span>Read the docs</span>
+                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Component 3 -->
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.3s;">
+                <div class="h-full p-8 rounded-lg">
+                    <div class="mb-6">
+                        <div class="reinvent-icon-container mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#00c9b7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Asset Generator <span class="text-sm text-gray-400">(coming soon)</span></h3>
+                    <p class="text-gray-300 mb-6">
+                        Streamline your community content creation process with our tools.
+                    </p>
+                    <span class="inline-flex items-center text-gray-400">
+                        <span>Coming soon</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0070f3] via-[#6f42c1] to-[#00c9b7] opacity-5"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16 reveal-animation">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Our Projects</h2>
+            <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Explore our suite of tools designed to make running AWS User Groups easier and more effective.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Otto Slackbot -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.2s;">
+                <div class="flex items-start relative z-10 p-8">
+                    <div class="flex-1">
+                        <div class="flex items-center mb-6">
+                            <div class="reinvent-icon-container mr-4">
+                                <svg class="w-6 h-6 text-[#ff4eb8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Otto - User Group Slackbot</h3>
+                        </div>
+                        
+                        <p class="text-gray-300 mb-6">
+                            Otto is an AI-powered Slackbot that helps user group leaders automate tasks, generate content, and manage events.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Generate meetup agendas from Sessionize</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Create event header images</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Automate event announcements</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://github.com/aws-user-group-toolkit/otto" class="inline-flex items-center text-[#ff4eb8] hover:text-[#0070f3] transition-colors group">
+                            <span>Learn more</span>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Community Dashboard -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.4s;">
+                <div class="flex items-start relative z-10 p-8">
+                    <div class="flex-1">
+                        <div class="flex items-center mb-6">
+                            <div class="reinvent-icon-container mr-4">
+                                <svg class="w-6 h-6 text-[#0070f3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Community Dashboard</h3>
+                        </div>
+                        
+                        <p class="text-gray-300 mb-6">
+                            A comprehensive dashboard for visualizing and exploring the AWS community, including Heroes, Community Builders, and User Groups.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Interactive maps of community members</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Filtering by category and region</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span>Community statistics and insights</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://github.com/aws-user-group-toolkit/community-dashboard" class="inline-flex items-center text-[#0070f3] hover:text-[#ff4eb8] transition-colors group">
+                            <span>Learn more</span>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16 reveal-animation">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Latest Blog Posts</h2>
+            <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+            <!-- Blog Post -->
+            <div class="reinvent-card p-px reveal-animation hover-scale mb-8">
+                <div class="p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Enhancing AWS User Group Meetups with Badge System and Name Tag Templates</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4">
+                        <span>1 minute read</span>
+                        <span class="mx-2">|</span>
+                        <span>Authors: Philipp Bergsmann, Linda Mohamed</span>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        In the dynamic world of technology and cloud computing, fostering a sense of community is essential. This post aims to introduce two valuable resources – the...
+                    </p>
+                    <a href="/blog/badge-system" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                        <span>Read more</span>
+                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="/blog" class="reinvent-button-secondary px-6 py-3 rounded-md inline-block">
+                    View All Posts
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Animated background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7] opacity-10"></div>
+    
+    <!-- re:Invent style grid -->
+    <div class="absolute inset-0 bg-grid-pattern bg-[length:50px_50px] opacity-10"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center reveal-animation">
+            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
+                <span class="text-[#ff4eb8] text-sm font-medium">Join Our Community</span>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 gradient-text text-glow">
+                Ready to Supercharge Your AWS User Group?
+            </h2>
+            
+            <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+            
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                Join hundreds of AWS User Group leaders who are using our toolkit to build thriving communities.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://github.com/aws-user-group-toolkit" class="reinvent-button hover-scale">
+                    <span class="relative z-10 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        Get Started Now
+                    </span>
+                </a>
+                
+                <a href="/docs" class="reinvent-button-secondary hover-scale">
+                    <span class="relative z-10">Learn More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ .Content }}
+{{ end }}

@@ -1,0 +1,54 @@
+baseURL = "https://usergroup-toolkit.com/"
+languageCode = "en-us"
+title = "AWS User Group Toolkit"
+theme = "ugtktheme"
+
+[params]
+  description = "Tools and resources for AWS User Group leaders"
+  images = ["images/og-image.jpg"]
+  mainSections = ["blog"]
+  
+  [params.social]
+    github = "https://github.com/aws-user-group-toolkit"
+    twitter = "https://twitter.com/awsusergroups"
+  
+  [params.hero]
+    title = "AWS User Group Toolkit"
+    subtitle = "Empowering community leaders with powerful tools"
+    buttonText = "Get Started"
+    buttonLink = "#projects"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/#projects"
+    weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "Contribute"
+    url = "/#contribute"
+    weight = 5
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    tabWidth = 2
+  
+  [markup.goldmark.renderer]
+    unsafe = true
