@@ -48,6 +48,16 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Debug directory structure
+        run: |
+          echo "Current directory structure:"
+          ls -la
+          echo "Theme directory structure:"
+          ls -la themes/ugtktheme
+          echo "Assets directory structure:"
+          ls -la assets || echo "No assets directory"
+          echo "Static directory structure:"
+          ls -la static || echo "No static directory"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -56,6 +66,12 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Debug public directory
+        run: |
+          echo "Public directory structure:"
+          ls -la public
+          echo "CSS files:"
+          find public -name "*.css"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

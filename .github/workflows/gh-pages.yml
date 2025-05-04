@@ -1,10 +1,15 @@
+# This workflow is deprecated and will be removed
+# Using hugo.yml instead
+
 name: GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - disabled  # Disabled this workflow
   pull_request:
+    branches:
+      - disabled  # Disabled this workflow
 
 jobs:
   deploy:
