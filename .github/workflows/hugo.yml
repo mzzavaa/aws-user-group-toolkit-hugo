@@ -65,7 +65,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://mzzavaa.github.io/aws-user-group-toolkit-hugo/"
       - name: Debug public directory
         run: |
           echo "Public directory structure:"
