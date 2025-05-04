@@ -227,7 +227,10 @@
     {{ if hugo.IsProduction }}
         {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
     {{ end }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $styles.Permalink }}">
+    
+    <!-- Fallback CSS in case resource processing fails -->
+    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
 </head>
 <body class="flex flex-col min-h-screen">
     <!-- Background elements -->
@@ -254,6 +257,6 @@
     {{ partial "footer.html" . }}
     
     <!-- JavaScript -->
-    <script src="{{ "js/main.js" | relURL }}"></script>
+    <script src="{{ "js/main.js" | absURL }}"></script>
 </body>
 </html>

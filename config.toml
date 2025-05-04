@@ -1,4 +1,5 @@
 baseURL = "https://mzzavaa.github.io/aws-user-group-toolkit-hugo/"
+publishDir = "public"
 languageCode = "en-us"
 title = "AWS User Group Toolkit"
 theme = "ugtktheme"
