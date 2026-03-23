@@ -194,6 +194,16 @@ body {
   border: 1px solid rgba(138, 43, 226, 0.3);
 }
 
+.logo-glow {
+  filter: drop-shadow(0 0 6px rgba(138, 43, 226, 1)) drop-shadow(0 0 18px rgba(111, 66, 193, 0.7));
+  animation: logoPulse 3s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(138, 43, 226, 1)) drop-shadow(0 0 18px rgba(111, 66, 193, 0.7)); }
+  50% { filter: drop-shadow(0 0 12px rgba(138, 43, 226, 1)) drop-shadow(0 0 32px rgba(111, 66, 193, 0.95)) drop-shadow(0 0 55px rgba(0, 112, 243, 0.5)); }
+}
+
 .shimmer-effect {
   position: relative;
   overflow: hidden;
