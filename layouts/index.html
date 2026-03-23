@@ -10,8 +10,8 @@
     <!-- Hero content -->
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center reveal-animation">
-            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
-                <span class="text-[#6f42c1] text-sm font-medium">AWS User Group Toolkit</span>
+            <div class="inline-block mb-6">
+                <img src="{{ "images/ugtk-logo.png" | absURL }}" alt="User Group Toolkit" class="h-24 w-auto mx-auto drop-shadow-[0_0_18px_rgba(111,66,193,0.8)] hover:drop-shadow-[0_0_28px_rgba(111,66,193,1)] transition-all duration-300">
             </div>
             
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 gradient-text leading-tight text-glow">
@@ -33,50 +33,57 @@
                         GitHub Organization
                     </span>
                 </a>
-                <a href="{{ "docs" | absURL }}" class="reinvent-button-secondary hover-scale">
+                <a href="/docs" class="reinvent-button-secondary hover-scale">
                     <span class="relative z-10">Read the Docs</span>
                 </a>
             </div>
         </div>
     </div>
     
+    <!-- Decorative bottom border -->
     <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#6f42c1] to-transparent"></div>
 </section>
 
 <!-- Toolkit Components Section -->
 <section class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
     <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-16 reveal-animation">
             <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Toolkit Components</h2>
             <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Explore our suite of tools designed to make running AWS User Groups easier and more effective.</p>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Explore our suite of tools designed to make running AWS User Groups easier and more effective.
+            </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Component 1 -->
-            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: .1s">
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.1s;">
                 <div class="h-full p-8 rounded-lg">
                     <div class="mb-6">
                         <div class="reinvent-icon-container mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6f42c1]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-white">Meetup Header Image Generator</h3>
-                    <p class="text-gray-300 mb-6">Create captivating meetup headers for your events with our easy-to-use generator.</p>
-                    <a href="{{ "docs" | absURL }}" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                    <p class="text-gray-300 mb-6">
+                        Create captivating meetup headers for your events with our easy-to-use generator.
+                    </p>
+                    <a href="/docs" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
                         <span>Read the docs</span>
                         <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
                     </a>
                 </div>
             </div>
             
             <!-- Component 2 -->
-            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: .2s">
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.2s;">
                 <div class="h-full p-8 rounded-lg">
                     <div class="mb-6">
                         <div class="reinvent-icon-container mb-4">
@@ -86,18 +93,20 @@
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-white">User Group Templates</h3>
-                    <p class="text-gray-300 mb-6">Ready-to-use templates for diverse content needs for your AWS User Group.</p>
-                    <a href="{{ "docs" | absURL }}" class="inline-flex items-center text-[#0070f3] hover:text-[#6f42c1] transition-colors group">
+                    <p class="text-gray-300 mb-6">
+                        Ready-to-use templates for diverse content needs for your AWS User Group.
+                    </p>
+                    <a href="/docs" class="inline-flex items-center text-[#0070f3] hover:text-[#6f42c1] transition-colors group">
                         <span>Read the docs</span>
                         <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
                     </a>
                 </div>
             </div>
             
             <!-- Component 3 -->
-            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: .3s">
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.3s;">
                 <div class="h-full p-8 rounded-lg">
                     <div class="mb-6">
                         <div class="reinvent-icon-container mb-4">
@@ -107,7 +116,9 @@
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-white">Asset Generator <span class="text-sm text-gray-400">(coming soon)</span></h3>
-                    <p class="text-gray-300 mb-6">Streamline your community content creation process with our tools.</p>
+                    <p class="text-gray-300 mb-6">
+                        Streamline your community content creation process with our tools.
+                    </p>
                     <span class="inline-flex items-center text-gray-400">
                         <span>Coming soon</span>
                     </span>
@@ -119,105 +130,134 @@
 
 <!-- Projects Section -->
 <section id="projects" class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
     <div class="absolute inset-0 bg-gradient-to-br from-[#0070f3] via-[#6f42c1] to-[#00c9b7] opacity-5"></div>
+    
     <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-16 reveal-animation">
             <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Our Projects</h2>
             <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Open-source tools built by community volunteers to make running AWS User Groups — and large-scale community events — easier and more effective.</p>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Explore our suite of tools designed to make running AWS User Groups easier and more effective.
+            </p>
         </div>
-
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Project 1: Otto -->
-            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: .2s">
+            <!-- Otto Slackbot -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.2s;">
                 <div class="flex items-start relative z-10 p-8">
                     <div class="flex-1">
                         <div class="flex items-center mb-6">
                             <div class="reinvent-icon-container mr-4">
                                 <svg class="w-6 h-6 text-[#ff4eb8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
                                 </svg>
                             </div>
                             <h3 class="text-2xl font-bold text-white">Otto - User Group Slackbot</h3>
                         </div>
-                        <p class="text-gray-300 mb-6">Otto is an AI-powered Slackbot that helps user group leaders automate tasks, generate content, and manage events.</p>
+                        
+                        <p class="text-gray-300 mb-6">
+                            Otto is an AI-powered Slackbot that helps user group leaders automate tasks, generate content, and manage events.
+                        </p>
+                        
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Generate meetup agendas from Sessionize</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Create event header images</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#ff4eb8]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#ff4eb8]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Automate event announcements</span>
                             </li>
                         </ul>
+                        
                         <a href="https://github.com/aws-user-group-toolkit/otto" class="inline-flex items-center text-[#ff4eb8] hover:text-[#0070f3] transition-colors group">
                             <span>Learn more</span>
-                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 2: Community Dashboard -->
-            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: .4s">
+            
+            <!-- Community Dashboard -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.4s;">
                 <div class="flex items-start relative z-10 p-8">
                     <div class="flex-1">
                         <div class="flex items-center mb-6">
                             <div class="reinvent-icon-container mr-4">
                                 <svg class="w-6 h-6 text-[#0070f3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                                 </svg>
                             </div>
                             <h3 class="text-2xl font-bold text-white">Community Dashboard</h3>
                         </div>
-                        <p class="text-gray-300 mb-6">A comprehensive dashboard for visualizing and exploring the AWS community, including Heroes, Community Builders, and User Groups.</p>
+                        
+                        <p class="text-gray-300 mb-6">
+                            A comprehensive dashboard for visualizing and exploring the AWS community, including Heroes, Community Builders, and User Groups.
+                        </p>
+                        
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Interactive maps of community members</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Filtering by category and region</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#0070f3]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#0070f3]" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
                                 </div>
                                 <span>Community statistics and insights</span>
                             </li>
                         </ul>
+                        
                         <a href="https://github.com/aws-user-group-toolkit/community-dashboard" class="inline-flex items-center text-[#0070f3] hover:text-[#ff4eb8] transition-colors group">
                             <span>Learn more</span>
-                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 3: GameDay Europe Stream -->
-            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: .6s">
+            <!-- GameDay Europe Stream -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.6s;">
                 <div class="flex items-start relative z-10 p-8">
                     <div class="flex-1">
                         <div class="flex items-center mb-6">
                             <div class="reinvent-icon-container mr-4">
                                 <svg class="w-6 h-6 text-[#00c9b7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.069A1 1 0 0121 8.845v6.31a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.069A1 1 0 0121 8.845v6.31a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
                             <h3 class="text-2xl font-bold text-white">GameDay Europe Stream</h3>
@@ -226,72 +266,72 @@
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#00c9b7]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
                                 <span>Stream templates repo — all Remotion compositions + design system</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#00c9b7]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Event repo — participant data, schedule, photos only</span>
+                                <span>Event repo — participant data, schedule, face photos only</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#00c9b7]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#00c9b7]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
                                 <span>Reusable for any city, country, or multi-region community event</span>
                             </li>
                         </ul>
                         <a href="https://github.com/mzzavaa/community-gameday-europe-stream-templates" class="inline-flex items-center text-[#00c9b7] hover:text-[#0070f3] transition-colors group">
                             <span>Stream templates</span>
-                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                         <span class="text-gray-600 mx-3">·</span>
                         <a href="https://github.com/mzzavaa/community-gameday-europe-event" class="inline-flex items-center text-[#00c9b7] hover:text-[#0070f3] transition-colors group">
                             <span>Event repo</span>
-                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 4: GameDay Countdown -->
-            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: .8s">
+            <!-- GameDay Event Config Repo -->
+            <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.8s;">
                 <div class="flex items-start relative z-10 p-8">
                     <div class="flex-1">
                         <div class="flex items-center mb-6">
                             <div class="reinvent-icon-container mr-4">
                                 <svg class="w-6 h-6 text-[#6f42c1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold text-white">GameDay Countdown Page</h3>
+                            <h3 class="text-2xl font-bold text-white">GameDay Event Config Repo</h3>
                         </div>
-                        <p class="text-gray-300 mb-6">A live countdown web page for AWS GameDay events — shows a real-time timer, event details, and participant information. Deploys to GitHub Pages in seconds.</p>
+                        <p class="text-gray-300 mb-6">The event-specific config repo for AWS Community GameDay Europe. Holds only what changes per edition — participant data, schedule, face photos. Push to main and it deploys automatically via the template repo. Fork it for your own event and point it at your own template.</p>
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Real-time countdown to event start</span>
+                                <span>participants.ts, schedule.ts, face photos — that's it</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Static, no backend — GitHub Pages deploy</span>
+                                <span>Fork + set TEMPLATE_REPO variable to use your own stream design</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
-                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Reusable for any community event</span>
+                                <span>Push to main → live in ~2 minutes via GitHub Actions</span>
                             </li>
                         </ul>
-                        <a href="https://github.com/mzzavaa/gameday-europe-countdown" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                        <a href="https://github.com/mzzavaa/community-gameday-europe-event" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
                             <span>View on GitHub</span>
-                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                            <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -309,15 +349,14 @@
             <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto">Practical guides and video walkthroughs for AWS User Group organizers.</p>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-            <!-- Resource 1: Logo Guide -->
-            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: .1s">
+            <!-- Logo Guide -->
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.1s;">
                 <div class="h-full p-8 rounded-lg">
                     <div class="reinvent-icon-container mb-6">
                         <svg class="w-6 h-6 text-[#6f42c1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-white">User Group Logo Guide</h3>
@@ -326,71 +365,130 @@
                         <li>→ Use PartyRock to define mission &amp; visual direction</li>
                         <li>→ One landmark, clean silhouette, works at 48×48px</li>
                         <li>→ Transparent PNGs in black &amp; white variants</li>
-                        <li>→ Canva templates enforce consistent spacing &amp; type</li>
+                        <li>→ Canva templates enforce consistent spacing &amp; typography</li>
                     </ul>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://www.lindamohamed.com/blog/designing-user-group-logos-templates" target="_blank" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
-                            <span>Read the guide</span>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.lindamohamed.com/blog/designing-user-group-logos-templates" target="_blank" class="reinvent-button-secondary px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                            <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                            Read the guide
                         </a>
-                        <a href="https://www.youtube.com/watch?v=v2AKsCKA6HM" target="_blank" class="inline-flex items-center text-[#ff4eb8] hover:text-[#0070f3] transition-colors group">
-                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                            <span>Watch on YouTube</span>
+                        <a href="https://www.youtube.com/watch?v=v2AKsCKA6HM" target="_blank" class="reinvent-button px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                            <span class="relative z-10 flex items-center">
+                                <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                                Watch on YouTube
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Resource 2: Sponsor Interview -->
-            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: .2s">
+            <!-- Sponsor Interview -->
+            <div class="reinvent-card p-px reveal-animation hover-scale" style="animation-delay: 0.2s;">
                 <div class="h-full p-8 rounded-lg">
                     <div class="reinvent-icon-container mb-6">
                         <svg class="w-6 h-6 text-[#0070f3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-white">Sponsor Interview — AWS Community Day</h3>
-                    <p class="text-gray-300 mb-4">A video interview with sponsors of AWS Community Day — perfect to share with potential sponsors who want to understand the value and reach of community events before committing.</p>
+                    <p class="text-gray-300 mb-4">A video interview with sponsors of AWS Community Day — share with potential sponsors who want to understand the value and reach of community events before committing.</p>
                     <ul class="space-y-2 mb-6 text-gray-400 text-sm">
                         <li>→ Real sponsor perspectives on community ROI</li>
-                        <li>→ Share with potential AWS Community Day sponsors</li>
                         <li>→ Shows the reach: 20+ countries, 2000+ community members</li>
+                        <li>→ Perfect for sponsor outreach emails</li>
                     </ul>
-                    <a href="https://www.youtube.com/watch?v=Xp47CWDqLH4" target="_blank" class="inline-flex items-center text-[#0070f3] hover:text-[#ff4eb8] transition-colors group">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        <span>Watch the interview</span>
-                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3" /></svg>
+                    <a href="https://www.youtube.com/watch?v=Xp47CWDqLH4" target="_blank" class="reinvent-button px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                        <span class="relative z-10 flex items-center">
+                            <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                            Watch the interview
+                        </span>
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
 
+<!-- Blog Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16 reveal-animation">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 gradient-text text-glow">Latest Blog Posts</h2>
+            <div class="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+            <!-- Blog Post -->
+            <div class="reinvent-card p-px reveal-animation hover-scale mb-8">
+                <div class="p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Enhancing AWS User Group Meetups with Badge System and Name Tag Templates</h3>
+                    <div class="flex items-center text-sm text-gray-400 mb-4">
+                        <span>1 minute read</span>
+                        <span class="mx-2">|</span>
+                        <span>Authors: Philipp Bergsmann, Linda Mohamed</span>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        In the dynamic world of technology and cloud computing, fostering a sense of community is essential. This post aims to introduce two valuable resources – the...
+                    </p>
+                    <a href="/blog/badge-system" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                        <span>Read more</span>
+                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="/blog" class="reinvent-button-secondary px-6 py-3 rounded-md inline-block">
+                    View All Posts
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- CTA Section -->
 <section class="py-24 relative overflow-hidden">
+    <!-- Animated background -->
     <div class="absolute inset-0 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7] opacity-10"></div>
+    
+    <!-- re:Invent style grid -->
     <div class="absolute inset-0 bg-grid-pattern bg-[length:50px_50px] opacity-10"></div>
+    
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center reveal-animation">
-            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
-                <span class="text-[#ff4eb8] text-sm font-medium">Join Our Community</span>
-            </div>
-            <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 gradient-text text-glow">Ready to Supercharge Your AWS User Group?</h2>
+            
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 gradient-text text-glow">
+                Ready to Supercharge Your AWS User Group?
+            </h2>
+            
             <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
-            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">Join hundreds of AWS User Group leaders who are using our toolkit to build thriving communities.</p>
+            
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                Join hundreds of AWS User Group leaders who are using our toolkit to build thriving communities.
+            </p>
+            
             <div class="flex flex-col sm:flex-row justify-center gap-6">
                 <a href="https://github.com/aws-user-group-toolkit" class="reinvent-button hover-scale">
                     <span class="relative z-10 flex items-center">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                         </svg>
                         Get Started Now
                     </span>
+                </a>
+                
+                <a href="/docs" class="reinvent-button-secondary hover-scale">
+                    <span class="relative z-10">Learn More</span>
                 </a>
             </div>
         </div>
     </div>
 </section>
+
+{{ .Content }}
 {{ end }}
