@@ -1,3 +1,4 @@
+{{ define "main" }}
 <!-- Hero Section -->
 <section class="relative overflow-hidden py-24 md:py-36">
     <!-- Animated background elements -->
@@ -9,8 +10,8 @@
     <!-- Hero content -->
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center reveal-animation">
-            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
-                <span class="text-[#6f42c1] text-sm font-medium">AWS User Group Toolkit</span>
+            <div class="inline-block mb-6">
+                <img src="{{ "images/ugtk-logo.png" | absURL }}" alt="User Group Toolkit" class="h-24 w-auto mx-auto drop-shadow-[0_0_18px_rgba(111,66,193,0.8)] hover:drop-shadow-[0_0_28px_rgba(111,66,193,1)] transition-all duration-300">
             </div>
             
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 gradient-text leading-tight text-glow">
@@ -295,34 +296,40 @@
                 </div>
             </div>
 
-            <!-- GameDay Countdown -->
+            <!-- GameDay Event Config Repo -->
             <div class="reinvent-card-highlight relative group reveal-animation hover-scale" style="animation-delay: 0.8s;">
                 <div class="flex items-start relative z-10 p-8">
                     <div class="flex-1">
                         <div class="flex items-center mb-6">
                             <div class="reinvent-icon-container mr-4">
                                 <svg class="w-6 h-6 text-[#6f42c1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold text-white">GameDay Countdown Page</h3>
+                            <h3 class="text-2xl font-bold text-white">GameDay Event Config Repo</h3>
                         </div>
-                        <p class="text-gray-300 mb-6">A live countdown web page for AWS GameDay events — real-time timer, event details, participant info. Static, no backend. Deploys to GitHub Pages in seconds.</p>
+                        <p class="text-gray-300 mb-6">The event-specific config repo for AWS Community GameDay Europe. Holds only what changes per edition — participant data, schedule, face photos. Push to main and it deploys automatically via the template repo. Fork it for your own event and point it at your own template.</p>
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
                                     <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Real-time countdown to event start</span>
+                                <span>participants.ts, schedule.ts, face photos — that's it</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
                                     <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 </div>
-                                <span>Reusable for any community event</span>
+                                <span>Fork + set TEMPLATE_REPO variable to use your own stream design</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-[#6f42c1]/20 flex items-center justify-center mr-3">
+                                    <svg class="h-3 w-3 text-[#6f42c1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <span>Push to main → live in ~2 minutes via GitHub Actions</span>
                             </li>
                         </ul>
-                        <a href="https://github.com/mzzavaa/gameday-europe-countdown" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
+                        <a href="https://github.com/mzzavaa/community-gameday-europe-event" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors group">
                             <span>View on GitHub</span>
                             <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -360,14 +367,16 @@
                         <li>→ Transparent PNGs in black &amp; white variants</li>
                         <li>→ Canva templates enforce consistent spacing &amp; typography</li>
                     </ul>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://www.lindamohamed.com/blog/designing-user-group-logos-templates" target="_blank" class="inline-flex items-center text-[#6f42c1] hover:text-[#0070f3] transition-colors">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                            <span>Read the guide</span>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.lindamohamed.com/blog/designing-user-group-logos-templates" target="_blank" class="reinvent-button-secondary px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                            <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                            Read the guide
                         </a>
-                        <a href="https://www.youtube.com/watch?v=v2AKsCKA6HM" target="_blank" class="inline-flex items-center text-[#ff4eb8] hover:text-[#0070f3] transition-colors">
-                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                            <span>Watch on YouTube</span>
+                        <a href="https://www.youtube.com/watch?v=v2AKsCKA6HM" target="_blank" class="reinvent-button px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                            <span class="relative z-10 flex items-center">
+                                <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                                Watch on YouTube
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -388,10 +397,11 @@
                         <li>→ Shows the reach: 20+ countries, 2000+ community members</li>
                         <li>→ Perfect for sponsor outreach emails</li>
                     </ul>
-                    <a href="https://www.youtube.com/watch?v=Xp47CWDqLH4" target="_blank" class="inline-flex items-center text-[#0070f3] hover:text-[#ff4eb8] transition-colors group">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-                        <span>Watch the interview</span>
-                        <svg class="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <a href="https://www.youtube.com/watch?v=Xp47CWDqLH4" target="_blank" class="reinvent-button px-4 py-2 rounded-md inline-flex items-center text-sm hover-scale">
+                        <span class="relative z-10 flex items-center">
+                            <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+                            Watch the interview
+                        </span>
                     </a>
                 </div>
             </div>
@@ -451,9 +461,6 @@
     
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center reveal-animation">
-            <div class="inline-block mb-6 reinvent-badge shimmer-effect">
-                <span class="text-[#ff4eb8] text-sm font-medium">Join Our Community</span>
-            </div>
             
             <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 gradient-text text-glow">
                 Ready to Supercharge Your AWS User Group?
@@ -462,7 +469,7 @@
             <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-[#6f42c1] via-[#0070f3] to-[#00c9b7]"></div>
             
             <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-                Join our community of AWS User Group leaders who are using our toolkit to organize their meetups and events.
+                Join hundreds of AWS User Group leaders who are using our toolkit to build thriving communities.
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-6">
@@ -483,4 +490,5 @@
     </div>
 </section>
 
+{{ .Content }}
 {{ end }}
