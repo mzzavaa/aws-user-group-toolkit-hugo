@@ -145,7 +145,7 @@ function createHexagonBackground() {
     // Random size
     const size = Math.random() * 100 + 50;
     hexagon.style.width = `${size}px`;
-    hexagon.style.height = `${size * 0.866}px`; // Height of a hexagon is width * sin(60°)
+    hexagon.style.height = `${size * 1.1547}px`; // Pointy-top: height = width / sin(60°)
     
     // Random position
     hexagon.style.left = `${Math.random() * 100}%`;
@@ -156,7 +156,7 @@ function createHexagonBackground() {
     
     // Styling
     hexagon.style.position = 'absolute';
-    hexagon.style.clipPath = 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)';
+    hexagon.style.clipPath = 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)';
     
     // Random gradient
     const gradientType = Math.random() > 0.5 ? 'linear' : 'radial';
