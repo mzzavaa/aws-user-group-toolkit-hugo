@@ -287,6 +287,97 @@ body {
   background-color: rgba(138, 43, 226, 0.1);
 }
 
+/* Color-coded action buttons */
+.btn-youtube {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 60, 60, 0.5);
+  color: #ff6b6b;
+  transition: all 0.2s ease;
+}
+.btn-youtube:hover { background-color: rgba(255, 0, 0, 0.28); border-color: #ff4444; color: #ff4444; }
+
+.btn-partyrock {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(255, 153, 0, 0.15);
+  border: 1px solid rgba(255, 153, 0, 0.5);
+  color: #ffb833;
+  transition: all 0.2s ease;
+}
+.btn-partyrock:hover { background-color: rgba(255, 153, 0, 0.28); border-color: #FF9900; color: #FF9900; }
+
+.btn-guide {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(0, 201, 183, 0.12);
+  border: 1px solid rgba(0, 201, 183, 0.45);
+  color: #00c9b7;
+  transition: all 0.2s ease;
+}
+.btn-guide:hover { background-color: rgba(0, 201, 183, 0.25); border-color: #00c9b7; }
+
+.btn-canva {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(0, 196, 204, 0.12);
+  border: 1px solid rgba(0, 196, 204, 0.45);
+  color: #7ed8e0;
+  transition: all 0.2s ease;
+}
+.btn-canva:hover { background-color: rgba(0, 196, 204, 0.25); border-color: #00c4cc; }
+
+.btn-notion {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(111, 66, 193, 0.15);
+  border: 1px solid rgba(111, 66, 193, 0.5);
+  color: #b084f5;
+  transition: all 0.2s ease;
+}
+.btn-notion:hover { background-color: rgba(111, 66, 193, 0.28); border-color: #8b5cf6; }
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+.btn-github:hover { background-color: rgba(255, 255, 255, 0.14); border-color: rgba(255,255,255,0.4); }
+
 .hover-scale {
   transition: transform 0.3s ease;
 }
